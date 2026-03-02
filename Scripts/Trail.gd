@@ -15,4 +15,5 @@ func _process(_delta):
 		add_point(point)
 	
 	if get_point_count() > length or active == false:
-		remove_point(0)
+		if get_point_count() != 0:
+			remove_point(0)
